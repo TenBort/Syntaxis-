@@ -11,7 +11,6 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 
 
-
 class BlankFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -19,7 +18,6 @@ class BlankFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_blank, container, false)
     }
-
 
 
     @SuppressLint("ResourceAsColor")
@@ -70,9 +68,6 @@ class BlankFragment : Fragment() {
 //                colorsarray[18]= R.color.purple_500
 
 
-
-
-
 //        val rnd = Random()
 //
 //        listColors.add(Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)))
@@ -83,27 +78,23 @@ class BlankFragment : Fragment() {
         var counter = 0
         button?.setOnClickListener {
             counter++
-            when (counter){
-                1->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.bright_pink))
-                2->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.red))
-                3->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.orange))
-                4->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.yellow))
-                5->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.chartreuse))
-                6->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.green))
-                7->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.spring_green))
-                8->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.cyan))
-                9->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.azure))
-                10->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.blue))
-                11->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.violet))
-                12->button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.magenta))
-                else -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.white))
+            when (counter) {
+                1 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.bright_pink))
+                2 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.red))
+                3 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.orange))
+                4 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.yellow))
+                5 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.chartreuse))
+                6 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.green))
+                7 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.spring_green))
+                8 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.cyan))
+                9 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.azure))
+                10 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.blue))
+                11 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.violet))
+                12 -> button.setBackgroundTintList(context?.getResources()?.getColorStateList(R.color.magenta))
+                else -> counter = 0
             }
 
         }
-
-
-
-
 
 
     }
